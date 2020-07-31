@@ -1,0 +1,30 @@
+<script>
+  function init () {
+    FB.getLoginStatus(function(response) {
+      console.log(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '615049866108554',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v7.0'
+    });
+
+    FB.AppEvents.logPageView();
+    init();
+
+  };
+
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/he_IL/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-login-button" data-size="medium" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div>

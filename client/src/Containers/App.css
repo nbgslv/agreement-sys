@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  vertical-align: top;
+}
+
+.App-header {
+  text-align: center;
+  background-color: #fff;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  color: #010101;
+  margin: auto;
+}
+
+.App-link {
+  color: #61dafb;
+}
